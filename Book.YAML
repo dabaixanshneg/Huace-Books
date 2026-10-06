@@ -1,0 +1,43 @@
+-
+  url: http://novel.hctestedu.com
+  headers:
+    referer: http://novel.hctestedu.com/user/login.html?originUrl=http://novel.hctestedu.com/user/userinfo.html
+    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36
+    x-kl-kfa-ajax-request: Ajax_Request
+    x-requested-with: XMLHttpRequest
+  login:
+    method: POST
+    data:
+      username: 18894687777
+      password: 123456
+    path: /user/login
+  #    添加到书架
+  add:
+    method: POST
+    path: /user/addToBookShelf
+    data:
+      bookId: 30310
+      preContentId: 2105167216088555520
+
+  #我的书架
+  bookshelf:
+    method: get
+    path: /user/listBookShelfByPage
+    data:
+      curr: 1
+      limit: 10
+#最近阅读
+  recentReading:
+    method: get
+    path: /user/listReadHistoryByPage
+    data:
+      curr: 1
+      limit: 10
+
+  #添加评论
+  speac:
+    method: POST
+    path: /book/addBookComment
+    data:
+      bookId: 30364
+      commentContent: 一个人的坚持有多难

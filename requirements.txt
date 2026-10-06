@@ -1,0 +1,21 @@
+# 核心测试框架
+pytest==9.1.1
+requests==2.32.3
+PyYAML==6.0.2
+pymysql==1.1.1
+
+# 报告与可视化
+allure-pytest==2.16.0
+allure-python-commons==2.16.0
+pytest-html==4.2.0
+
+# 测试辅助插件（按需保留）
+pytest-ordering==0.6          # 控制用例执行顺序
+pytest-xdist==3.8.0           # 并行执行
+pytest-rerunfailures==16.4    # 失败重试
+pytest-result-log==1.2.2      # 日志记录（你已禁用）
+pytest-base-url==2.1.0
+pytest-metadata==3.1.1
+pytest-variables==3.1.0
+pytest-selenium==4.1.0        # 若不用UI测试可删除
+anyio==4.14.2                 # 异步相关，一般由其他库带入
